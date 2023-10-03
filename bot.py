@@ -20,38 +20,54 @@ logger = logging.getLogger(__name__)
 openai.api_key = config["OPENAI_API_KEY"]
 MODEL_ENGINE = "gpt-3.5-turbo"
 
+USER_CONVERSATIONS = {}
+
 #we define a function that should process a specific type of update:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=
         """Hi there I'm HealthServeAI, ask me any questions about HealthServe. I'm here to ensure you have a proper onboarding!""")
     
-async def getResponse(user_input: str):
-    CONVERSATIONS = []
-    CONVERSATIONS.append({'role':'user', 'content':user_input})
+async def getResponse(user_id:int ,user_input: str):
+    global USER_CONVERSATIONS 
+    user_history = USER_CONVERSATIONS.get(user_id, [])
+    print("This is the user_id: " + str(user_id) + "This is the user_history:")
+    print(user_history)
+    user_history.append({'role': 'user', 'content': user_input})
+    USER_CONVERSATIONS[user_id] = user_history
     # Use OpenAI's ChatCompletion API to get the chatbot's response
     try:
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",  # The name of the OpenAI chatbot model to use
-            messages=CONVERSATIONS,   # The conversation history up to this point, as a list of dictionaries
-            max_tokens=3800,        # The maximum number of tokens (words or subwords) in the generated response
+            messages=user_history,   # The conversation history up to this point, as a list of dictionaries
+            max_tokens=4000,        # The maximum number of tokens (words or subwords) in the generated response
             stop=None,              # The stopping sequence for the generated response, if any (not used here)
             temperature=0.7,        # The "creativity" of the generated response (higher temperature = more creative)
         )
-
+        
     # Find the first response from the chatbot that has text in it (some responses may not have text)
         for choice in response.choices:
             if "text" in choice:
+                user_history.append({"role": "assistant", "content": choice.text})
+                reset_data(user_history)
+                USER_CONVERSATIONS[user_id] = user_history
                 return choice.text
 
         # If no response with text is found, return the first response's content (which may be empty)
+        user_history.append({"role": "assistant", "content": response.choices[0].message.content})
+        reset_data(user_history)
+        USER_CONVERSATIONS[user_id] = user_history
         return response.choices[0].message.content
     except Exception as error_msg:
         return "Sorry I was unable to generate a response form openAI"
 
 async def chat_handler(update: Update, context: ContextTypes.DEFAULT_TYPE): # Define the chat message handler
     messageFromUser = update.message.text.strip()
-    responseFromOpenAi = await getResponse(messageFromUser)
+    user_id = update.message.from_user.id
+    responseFromOpenAi = await getResponse(user_id,messageFromUser)
     await update.message.reply_text(responseFromOpenAi) # Send the response to the user
+
+def reset_data(arr: list):
+    del arr[:-2]
 
 async def caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text_caps = ' '.join(context.args).upper()
