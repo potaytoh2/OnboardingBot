@@ -30,6 +30,7 @@ logger = logging.getLogger(__name__)
 openai.api_key = config["OPENAI_API_KEY"]
 MODEL_ENGINE = "gpt-3.5-turbo"
 
+count = 0
 
 memory = ConversationBufferMemory(
     memory_key="chat_history",
@@ -52,7 +53,7 @@ Helpful Answer:"""
 custom_prompt = PromptTemplate.from_template(template)
 
 llm_name = "gpt-3.5-turbo"
-llm = ChatOpenAI(model_name=llm_name, temperature=0,openai_api_key=openai.api_key)
+llm = ChatOpenAI(model_name=llm_name, temperature=0.2,openai_api_key=openai.api_key)
 
 
 
@@ -68,7 +69,6 @@ async def getResponse(user_id:int ,user_input: str, source_language: str):
     try:
         answer = query(user_input)
         # If the source language is not English, translate the response to the source language
-        print(answer)
         if source_language != 'en':
             answer = translate_to_source_language(answer, source_language)
         return answer
@@ -85,7 +85,6 @@ async def chat_handler(update: Update, context: ContextTypes.DEFAULT_TYPE): # De
     # If message is not in English, translate it to English
     if source_language != 'en':
         messageFromUser = translate_to_english(messageFromUser, source_language)
-    print(messageFromUser)
     responseFromOpenAi = await getResponse(user_id,messageFromUser,source_language)
     await update.message.reply_text(responseFromOpenAi) # Send the response to the user
 
@@ -111,7 +110,7 @@ async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")
 
 def query(question:str):
-    #chunk(question,5)
+    chunk(question,4)
     retriever=db3.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": .5, "k": 5})
     qa = ConversationalRetrievalChain.from_llm(
     llm,
@@ -127,6 +126,7 @@ def query(question:str):
 
 def chunk(question:str, k:int):
     try:
+        global count
         docs = db3.similarity_search(question, k)
         table_data = []
 
@@ -137,8 +137,12 @@ def chunk(question:str, k:int):
             chunk_data = [i, source, page_content]
             table_data.append(chunk_data)
 
-        table_str = tabulate(table_data, headers=["Index", "Source", "Page Content"])
-        print(table_str)
+        table_str = tabulate(table_data, headers=["Index", "Source", "Page Content"], tablefmt="grid")
+        
+        with open(f"queries/${count}.html", "w", encoding='utf-8') as html_file:
+            html_file.write(f"<html><body>{table_str}</body></html>")
+        count += 1
+
 
     except Exception as error_msg:
         print("Error: ", error_msg)

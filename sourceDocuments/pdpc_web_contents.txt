@@ -1,0 +1,190 @@
+[A Singapore Government Agency Website](https://www.gov.sg "Singapore
+Goverment Website")
+
+[![PDPC Logo](/-/media/PDPC/logo.png)](/ "Personal Data Protection
+Commission")
+
+Search
+
+  * [ Who We Are](/Who-We-Are)
+  * [ Overview of PDPA](/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act)
+    * [The Legislation](/Overview-of-PDPA/The-Legislation)
+      * [PDPA Overview](/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act)
+      * [Enforcement of the Act](/Overview-of-PDPA/The-Legislation/Enforcement-of-the-Act)
+      * [Exemption Requests](/Overview-of-PDPA/The-Legislation/Exemption-Requests)
+    * [Data Protection](/Overview-of-PDPA/Data-Protection)
+      * [Business Owner](/Overview-of-PDPA/Data-Protection/Business-Owner)
+      * [Individual](/Overview-of-PDPA/Data-Protection/Individual)
+    * [Do Not Call Registry](/Overview-of-PDPA/Do-Not-Call-Registry)
+      * [Business Owner](/Overview-of-PDPA/Do-Not-Call-Registry/Business-Owner)
+      * [Individual](/Overview-of-PDPA/Do-Not-Call-Registry/Individual)
+  * [ Enforcement Decisions](/Enforcement-Decisions)
+  * [ News & Events](/News-and-Events)
+    * [Announcements](/News-and-Events/Announcements)
+    * [Press Room](/News-and-Events/Press-Room)
+    * [Events](/News-and-Events/Events)
+  * [ Guidelines & Consultations](/Guideline-and-Consultation-Menu)
+    * [Advisory Guidelines](/Guidelines-and-Consultation?type=advisory-guidelines)
+    * [Sector Specific Guidelines](/Guidelines-and-Consultation?type=sector-specific-advisory-guidelines)
+    * [Company Specific Issued Guidance](/Guidelines-and-Consultation?type=industry-led-guidelines)
+    * [Practical Guidance](/Guidelines-and-Consultation?type=practical-guidance)
+    * [Public Consultations](/Guidelines-and-Consultation?type=public-consultations)
+    * [Guides](https://www.pdpc.gov.sg/Help-and-Resources?keyword=&persona=dp-professional&topic=all&type=guides&page=1)
+  * Help & Resources
+    * [Business Owner](/Help-and-Resources-Menu/Resource-Business-Owner)
+    * [DP Professional](/Help-and-Resources-Menu/Resource-DP-Professional)
+    * [Individual](/Help-and-Resources-Menu/Resource-Individual)
+    * [FAQs](/Help-and-Resources-Menu/FAQs)
+      * [Business Owner](/Help-and-Resources-Menu/FAQs/Business-Owner)
+      * [DP Professional](/Help-and-Resources-Menu/FAQs/DP-Professional)
+      * [Individual](/Help-and-Resources-Menu/FAQs/Individual)
+
+Toggle search bar Toggle mobile menu
+
+Search
+
+  * [Home](/)
+  * [Overview of PDPA](/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act)
+  * [The Legislation](/Overview-of-PDPA/The-Legislation)
+  * [PDPA Overview](/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act)
+
+## PDPA Overview
+
+### What is Personal Data?
+
+Personal data refers to data about an individual who can be identified from
+that data, or from that data and other information to which the organisation
+has or is likely to have access.
+
+### What is the PDPA?
+
+The Personal Data Protection Act (PDPA) provides a baseline standard of
+protection for personal data in Singapore. It complements sector-specific
+legislative and regulatory frameworks such as the Banking Act and Insurance
+Act.
+
+It comprises various requirements governing the collection, use, disclosure
+and care of personal data in Singapore.
+
+It also provides for the establishment of a national Do Not Call (DNC)
+Registry. Individuals may register their Singapore telephone numbers with the
+DNC Registry to opt out of receiving unwanted telemarketing messages from
+organisations.
+
+### Objectives of the PDPA
+
+The PDPA recognises both the need to protect individuals’ personal data and
+the need of organisations to collect, use or disclose personal data for
+legitimate and reasonable purposes.
+
+A data protection regime is necessary to safeguard personal data from misuse
+and to maintain individuals’ trust in organisations that manage their data.
+
+By regulating the flow of personal data among organisations, the PDPA also
+aims to strengthen Singapore’s position as a trusted hub for businesses.
+
+### Scope of the PDPA
+
+The PDPA covers personal data stored in electronic and non-electronic formats.
+
+It generally does not apply to:
+
+  * Any individual acting on a personal or domestic basis.
+  * Any individual acting in his/her capacity as an employee with an organisation.
+  * Any public agency in relation to the collection, use or disclosure of personal data.
+  * Business contact information such as an individual’s name, position or title, business telephone number, business address, business email, business fax number and similar information.
+
+### Data Protection Obligations
+
+Organisations are required to comply with the various data protection
+obligations if they undertake activities relating to the collection, use or
+disclosure of personal data. Learn more about the obligations
+[here](/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act/Data-
+Protection-Obligations).
+
+### Development of the PDPA
+
+  
+|
+
+**2013**
+
+Establishment of the PDPC on 2 January.  
+  
+---|---  
+  
+**2014**
+
+The DNC Registry provisions came into force on 2 January and the main data
+protection rules on 2 July.  
+  
+**2020**
+
+Amendments to the PDPA passed on 2 November.  
+  
+**2021**
+
+Amendments to the PDPA took effect in phases from 1 February.  
+  
+### The Act
+
+  * [Personal Data Protection Act 2012](https://sso.agc.gov.sg/Act/PDPA2012)
+  * [Info-communications Media Development Act 2016](https://sso.agc.gov.sg/Act/IMDAA2016)
+
+#### Regulations
+
+  * [Personal Data Protection (Composition of Offences) Regulations 2021](https://sso.agc.gov.sg/SL-Supp/S70-2021/Published/20210129?DocDate=20210129)
+  * [Personal Data Protection (Do Not Call Registry) Regulations 2013](https://sso.agc.gov.sg/SL/PDPA2012-S709-2013?DocDate=20150529)
+  * [Personal Data Protection (Enforcement) Regulations 2021](https://sso.agc.gov.sg/SL-Supp/S62-2021/Published/20210129?DocDate=20210129)
+  * [Personal Data Protection Regulations 2021](https://sso.agc.gov.sg/SL-Supp/S63-2021/Published/20210129?DocDate=20210129)
+  * [Personal Data Protection (Appeal) Regulations 2021](https://sso.agc.gov.sg/SL-Supp/S65-2021/Published/20210129?DocDate=20210129)
+  * [Personal Data Protection (Notification of Data Breaches) Regulations 2021](https://sso.agc.gov.sg/SL-Supp/S64-2021/Published/20210129?DocDate=20210129)
+
+#### Other Subsidiary Legislation
+
+  * [Personal Data Protection (Statutory Bodies) Notification 2013](https://sso.agc.gov.sg/SL/PDPA2012-S149-2013?DocDate=20180329)
+  * [Personal Data Protection (Prescribed Law Enforcement Agencies) Notification 2014](https://sso.agc.gov.sg/SL/PDPA2012-S368-2014?DocDate=20140521)
+  * [Personal Data Protection (Prescribed Law Enforcement Agency) Notification 2020](https://sso.agc.gov.sg/SL/PDPA2012-S272-2020?DocDate=20200414)
+  * [Personal Data Protection (Prescribed Healthcare Bodies) Notification 2015  
+](https://sso.agc.gov.sg/SL/PDPA2012-S90-2015?DocDate=20150227)
+
+Parties to civil proceedings relating to the PDPA may also wish to refer to
+the Rules of Court 2021, Order 57.
+
+  * [Rules of Court 2021, Order 57](https://sso.agc.gov.sg/SL-Supp/S914-2021/Published/20211201?DocDate=20211201&ProvIds=P12-PO57-#P12-PO57-)
+
+Share
+
+  *   *   *   *   * 
+
+To offer you a better experience, this site uses cookies. Read more about
+cookies in our [Privacy Statement.](/Privacy-Statement)
+
+Close
+
+Back to top of page
+
+### Personal Data Protection Commission
+
+  * [Home](/)
+  * [Who We Are](/Who-We-Are)
+  * [Overview of PDPA](/Overview-of-PDPA/The-Legislation/Personal-Data-Protection-Act)
+  * [Help and Resources](/Help-and-Resources)
+  * [News & Events](/News-and-Events)
+  * [Guidelines & Consultations](/Guideline-and-Consultation-Menu)
+
+  * [Contact Us](/Contact-Us)
+  * [FAQs](/FAQ-Listing)
+  * [Sitemap](/Sitemap)
+
+  * [](https://www.facebook.com/pdpcsg "facebook Icon")
+  * [](https://www.instagram.com/pdpcsg/ "instagram Icon")
+  * [](https://www.linkedin.com/company/pdpc/ "linkedin Icon")
+  * [](https://www.youtube.com/user/PDPCSingapore "youtube Icon")
+
+  * [Report Vulnerability](https://www.tech.gov.sg/report_vulnerability)
+  * [Privacy Statement](/Privacy-Statement)
+  * [Terms and Conditions](/Terms-and-Conditions)
+
+© 2023 Personal Data Protection CommissionLast updated 19 Apr 2023
+
