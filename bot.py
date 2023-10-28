@@ -3,6 +3,16 @@ import openai
 import logging
 from telegram import Update, InlineQueryResultArticle, InputTextMessageContent
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes , MessageHandler, filters, InlineQueryHandler
+from langchain.memory import ConversationBufferMemory, ConversationSummaryMemory
+from langchain.prompts import PromptTemplate
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import ConversationalRetrievalChain
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+from tabulate import tabulate
+from google.cloud import translate_v2 as translate
+
+
 config = dotenv_values(".env")
 
 
@@ -20,54 +30,64 @@ logger = logging.getLogger(__name__)
 openai.api_key = config["OPENAI_API_KEY"]
 MODEL_ENGINE = "gpt-3.5-turbo"
 
-USER_CONVERSATIONS = {}
+
+memory = ConversationBufferMemory(
+    memory_key="chat_history",
+    return_messages=True,
+    input_key='question',
+    output_key='answer'
+)
+
+embedding = OpenAIEmbeddings(openai_api_key=openai.api_key)
+db3 = Chroma(persist_directory="./VectorStore",embedding_function=embedding)
+
+template = """ You are a chatbot for HealthServe, a non-profit organization that provides medical care to migrant workers in Singapore. 
+Your role is to provide information regarding onboarding for new volunteers.
+Given the following context and chat history, come up with an answer at the end.
+{context}
+Avoid answering questions that have nothing to do with HealthServe so if you encounter such questions, tell them that you're unable to answer a question that is out of scope.
+Question: {question}
+Helpful Answer:"""
+
+custom_prompt = PromptTemplate.from_template(template)
+
+llm_name = "gpt-3.5-turbo"
+llm = ChatOpenAI(model_name=llm_name, temperature=0,openai_api_key=openai.api_key)
+
+
+
+translate_client = translate.Client()
 
 #we define a function that should process a specific type of update:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text=
         """Hi there I'm HealthServeAI, ask me any questions about HealthServe. I'm here to ensure you have a proper onboarding!""")
     
-async def getResponse(user_id:int ,user_input: str):
-    global USER_CONVERSATIONS 
-    user_history = USER_CONVERSATIONS.get(user_id, [])
-    print("This is the user_id: " + str(user_id) + "This is the user_history:")
-    print(user_history)
-    user_history.append({'role': 'user', 'content': user_input})
-    USER_CONVERSATIONS[user_id] = user_history
+async def getResponse(user_id:int ,user_input: str, source_language: str):
     # Use OpenAI's ChatCompletion API to get the chatbot's response
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # The name of the OpenAI chatbot model to use
-            messages=user_history,   # The conversation history up to this point, as a list of dictionaries
-            max_tokens=4000,        # The maximum number of tokens (words or subwords) in the generated response
-            stop=None,              # The stopping sequence for the generated response, if any (not used here)
-            temperature=0.7,        # The "creativity" of the generated response (higher temperature = more creative)
-        )
-        
-    # Find the first response from the chatbot that has text in it (some responses may not have text)
-        for choice in response.choices:
-            if "text" in choice:
-                user_history.append({"role": "assistant", "content": choice.text})
-                reset_data(user_history)
-                USER_CONVERSATIONS[user_id] = user_history
-                return choice.text
-
-        # If no response with text is found, return the first response's content (which may be empty)
-        user_history.append({"role": "assistant", "content": response.choices[0].message.content})
-        reset_data(user_history)
-        USER_CONVERSATIONS[user_id] = user_history
-        return response.choices[0].message.content
+        answer = query(user_input)
+        # If the source language is not English, translate the response to the source language
+        print(answer)
+        if source_language != 'en':
+            answer = translate_to_source_language(answer, source_language)
+        return answer
     except Exception as error_msg:
-        return "Sorry I was unable to generate a response form openAI"
+        return "Sorry I was unable to generate a response from openAI"
 
 async def chat_handler(update: Update, context: ContextTypes.DEFAULT_TYPE): # Define the chat message handler
     messageFromUser = update.message.text.strip()
     user_id = update.message.from_user.id
-    responseFromOpenAi = await getResponse(user_id,messageFromUser)
-    await update.message.reply_text(responseFromOpenAi) # Send the response to the user
 
-def reset_data(arr: list):
-    del arr[:-2]
+    # Detect the language of the message
+    source_language = detect_language(messageFromUser)
+
+    # If message is not in English, translate it to English
+    if source_language != 'en':
+        messageFromUser = translate_to_english(messageFromUser, source_language)
+    print(messageFromUser)
+    responseFromOpenAi = await getResponse(user_id,messageFromUser,source_language)
+    await update.message.reply_text(responseFromOpenAi) # Send the response to the user
 
 async def caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text_caps = ' '.join(context.args).upper()
@@ -90,6 +110,78 @@ async def inline_caps(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")
 
+def query(question:str):
+    #chunk(question,5)
+    retriever=db3.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": .5, "k": 5})
+    qa = ConversationalRetrievalChain.from_llm(
+    llm,
+    combine_docs_chain_kwargs={"prompt": custom_prompt},
+    retriever=retriever,
+    return_source_documents=True,
+    return_generated_question=True,
+    memory=memory
+    )
+    result = qa({"question":question})
+    # ,"chat_history":chat_history
+    return result["answer"]
+
+def chunk(question:str, k:int):
+    try:
+        docs = db3.similarity_search(question, k)
+        table_data = []
+
+        for i in range(k):
+            metadata = docs[i].metadata
+            page_content = docs[i].page_content
+            source = metadata['source']
+            chunk_data = [i, source, page_content]
+            table_data.append(chunk_data)
+
+        table_str = tabulate(table_data, headers=["Index", "Source", "Page Content"])
+        print(table_str)
+
+    except Exception as error_msg:
+        print("Error: ", error_msg)
+
+# for google cloud detection of language
+def detect_language(text):
+    # Initialize the Google Cloud Translation client
+    client = translate.Client()
+
+    # Detect the language of the text
+    result = client.detect_language(text)
+    
+    return result['language']
+
+# for google cloud translation to english
+def translate_to_english(text, source_language):
+    # Initialize the Google Cloud Translation client
+    client = translate.Client()
+
+    # If the source language is English, return the text as is
+    if source_language == 'en':
+        return text
+
+    # Translate the text to English
+    translation = client.translate(text, source_language=source_language, target_language='en')
+    
+    return translation['translatedText']
+
+# for google cloud translation to source language
+def translate_to_source_language(text, source_language):
+    # Initialize the Google Cloud Translation client
+    client = translate.Client()
+
+    # If the source language is English, return the text as is
+    if source_language == 'en':
+        return text
+
+    # Translate the text back to the source language
+    translation = client.translate(text, source_language='en', target_language=source_language)
+    
+    return translation['translatedText']
+
+
 
 if __name__ == '__main__':
     application = ApplicationBuilder().token(config["TELEGRAM_API_KEY"]).build()
@@ -99,7 +191,6 @@ if __name__ == '__main__':
     chat_handler = MessageHandler(filters.TEXT &  (~filters.COMMAND), chat_handler)
     inline_caps_handler = InlineQueryHandler(inline_caps)
     unknown_handler = MessageHandler(filters.COMMAND, unknown)
-    
     start_handler = CommandHandler('start', start)
     
 

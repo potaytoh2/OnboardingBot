@@ -2,10 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import html2text
 
-def extract_text_from_website_recursive(url, output_file, depth=3):
-    if depth <= 0:
-        return
-
+def extract_text_from_website(url, output_file):
     try:
         # Send an HTTP GET request to the URL
         response = requests.get(url)
@@ -27,13 +24,6 @@ def extract_text_from_website_recursive(url, output_file, depth=3):
 
             print(f"Text from '{url}' extracted and saved to '{output_file}'")
 
-            # Find and follow links to other pages
-            links = soup.find_all('a', href=True)
-            for link in links:
-                linked_url = link['href']
-                if linked_url.startswith(('http://', 'https://')):
-                    extract_text_from_website_recursive(linked_url, output_file, depth - 1)
-
         else:
             print(f"Failed to fetch the web page '{url}'. Status code: {response.status_code}")
 
@@ -43,4 +33,4 @@ def extract_text_from_website_recursive(url, output_file, depth=3):
 # Example usage:
 website_url = "https://www.healthserve.org.sg/"
 output_file = "healthserve_web_contents.txt"
-extract_text_from_website_recursive(website_url, output_file)
+extract_text_from_website(website_url, output_file)

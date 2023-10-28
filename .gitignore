@@ -1,1 +1,5 @@
 .env
+VectorStore/
+sourceDocumets/
+_pycache_/
+.venv
