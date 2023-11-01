@@ -1,0 +1,223 @@
+You are using a version of browser which will not be supported after 27 May
+2018. To continue to transact with MOM securely, please follow [these
+steps](http://www.mom.gov.sg/faq/eservices/how-do-i-enable-tls-for-web-
+browsers ) to enable the Transport Layer Security (TLS) of your web browser,
+or upgrade to the latest version of your browser.
+
+  
+
+Skip to main content
+
+[Ministry of Manpower Homepage](/ "Ministry of Manpower")
+
+[About us](/about-us) ![](/html/mom/images/branding/mom-logo-print.png)
+
+Menu
+
+[ ![Work passes](/-/media/mom/files/images/home-page/icon-passes-
+permits.png)Work passes](/passes-and-permits) [ ![Employment
+practices](/-/media/mom/files/images/home-page/icon-employment-
+practices.png)Employment practices](/employment-practices) [ ![Workplace
+safety and health](/-/media/mom/files/images/home-page/icon-workplace-
+safety.png)Workplace safety and health](/workplace-safety-and-health) [
+![Statistics and publications](/-/media/mom/files/images/home-page/icon-
+statistics.png)Statistics and publications](http://stats.mom.gov.sg)
+[![eServices](/-/media/mom/files/images/home-
+page/eservices.png)eServices](/eservices)
+[![Calculators](/-/media/mom/files/images/home-page/icon-
+calculator.png)Calculators](/eservices/calculators)
+[![Forms](/-/media/mom/files/images/home-page/forms.png)Forms](/forms)
+[![Newsroom](/-/media/mom/files/images/home-
+page/newsroom.png)Newsroom](/newsroom)
+
+Search
+
+[Sector-specific rules](/passes-and-permits/work-permit-for-foreign-
+worker/sector-specific-rules) [Home](/ "Home") [Work passes](/passes-and-
+permits "Work passes")[Work Permit for migrant worker](/passes-and-
+permits/work-permit-for-foreign-worker "Work Permit for migrant
+worker")[Sector-specific rules](/passes-and-permits/work-permit-for-foreign-
+worker/sector-specific-rules "Sector-specific rules")[Medical
+insurance](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-
+rules/medical-insurance "Medical insurance")
+
+Select zoneAll All Newsroom Work passes and permits Workplace safety and
+health Employment practices eServices Forms Employment agencies Related
+questions
+
+Search query Clear search
+
+Search
+
+Close search
+
+PH pay, COMPASS, Primary Care Plan, myMOM Portal, paying salary, annual leave
+
+#  Medical insurance requirements for migrant workers
+
+You must buy and maintain medical insurance (MI) for each migrant worker you
+employ. The insurance cost cannot be passed on to your workers. You also need
+to submit the insurance details online before the Work Permit can be issued.
+
+## What it should cover
+
+As an employer, you must buy and maintain MI with coverage for inpatient care
+and day surgery, including hospital bills for conditions that may not be work-
+related. The coverage for each Work Permit holder has to be **at least** :
+
+  * (For policies with start date effective **before** 1 July 2023) $15,000 per year
+  * (For policies with start date effective **on or after** 1 July 2023) $60,000 per year
+
+### Enhanced MI
+
+Since **1 July 2023** , we have [enhanced the minimum MI
+required](/newsroom/press-releases/2023/0331-implementation-of-enhanced-
+medical-insurance-for-foreign-employees-to-better-support-employers) for all
+new and existing Work Permit holders (including migrant domestic workers). The
+enhanced MI will better protect employers against large medical bills incurred
+by your workers, and will be implemented in two stages as shown in the table
+below.
+
+Engage [insurers offering the enhanced MI](/-/media/mom/documents/work-passes-
+and-permits/insurers-offering-enhanced-mi-products.pdf) early to understand
+the products available. We encourage you to buy an MI with all the enhanced
+requirements early for better peace of mind.
+
+To implement for MI policies, renewals or extensions with start date effective
+from | Enhanced MI requirements  
+---|---  
+1 July 2023 (Stage 1) | Higher annual claim limit of at least $60,000, with a
+co-payment of 75% by insurers and 25% by employers for claim amounts above
+$15,000.  
+  
+1 July 2025 (Stage 2) |
+
+  * Standardisation of allowable exclusion clauses
+  * Introduction of age-differentiated premiums for those aged 50 and below, and those aged above 50
+  * Requirement for insurers to reimburse hospitals directly upon the admissibility of the claim
+
+  
+  
+You do not need to buy MI if the Work Permit holder is also holding a
+Dependant’s Pass and already has an MI plan that meets the minimum coverage
+required for Work Permit holders. The insurance plan must cover the full
+period of the Work Permit validity.
+
+You can have a **co-pay arrangement** with the Work Permit holder (excluding
+migrant domestic workers) for their medical bills, only if all of the
+following are met:
+
+  * The co-pay amount is reasonable and does not exceed 10% of the worker’s fixed monthly salary.
+  * The duration of co-payment does not exceed 6 months (for every 2 years of employment).
+  * The co-payment option is explicitly in the employment contract or collective agreement and has the worker’s full consent. 
+
+## Submit insurance details
+
+You need to submit MI details online before you request to issue or renew a
+Work Permit, and when the details change.
+
+To update the information, log in to [WP Online](/eservices/services/wp-
+online-for-businesses-and-employment-agencies).
+
+You need to keep the following information up to date:
+
+  * Name of insurer
+  * Insurance policy number
+  * Insurance policy commencement date
+  * Insurance policy expiry date
+
+[What's next
+
+ __Medical examination
+
+](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-
+rules/medical-examination)
+
+Share this page [Share this page on
+facebook](https://www.facebook.com/sharer/sharer.php?u=http://www.mom.gov.sg/passes-
+and-permits/work-permit-for-foreign-worker/sector-specific-rules/medical-
+insurance)[Tweet this page](https://twitter.com/intent/tweet?text=Medical
+insurance requirements for migrant workers&url=http://www.mom.gov.sg/passes-
+and-permits/work-permit-for-foreign-worker/sector-specific-rules/medical-
+insurance&via=MOM_sg&hashtags=fwmi)[Email this page](mailto:?subject=Medical
+insurance requirements for migrant workers&body=http://www.mom.gov.sg/passes-
+and-permits/work-permit-for-foreign-worker/sector-specific-rules/medical-
+insurance)Print this page
+
+Last Updated: 12 July 2023
+
+## __Related questions
+
+  * [Do I need to buy a new enhanced medical insurance (as announced by MOM on 31 March 2023) for my Work Permit or S Pass holders if they already have an existing policy? If so, when must I do this?](/faq/work-permit-for-foreign-worker/for-ers-with-existing-mi-policies-is-there-cutoff-date-to-transit-to-enhanced-mi-reqmts)
+  * [Are the enhanced medical insurance (MI) requirements announced by MOM on 31 March 2023 compulsory?](/faq/work-permit-for-foreign-worker/are-the-enhanced-medical-insurance-requirements-compulsory)
+  * [ How would I be affected by the enhanced medical insurance requirements announced by MOM on 31 March 2023?](/faq/work-permit-for-foreign-worker/how-would-i-be-affected-by-the-enhanced-mi-requirements-announced-by-mom-on-31-mar-2023)
+  * [Where can I buy medical insurance for migrant workers?](/faq/work-permit-for-foreign-worker/where-can-i-buy-medical-insurance-for-foreign-workers)
+  * [How can I guarantee that the medical insurance (MI) for migrant worker or MDW meets MOM's requirements?](/faq/work-permit-for-foreign-worker/how-can-i-guarantee-that-the-medical-insurance-for-foreign-worker-or-fdw-meets-moms-requirements)
+  * [If my migrant worker has an individual insurance plan that meets MOM's requirements, do I still need to buy medical insurance?](/faq/work-permit-for-foreign-worker/if-my-foreign-worker-has-an-individual-insurance-plan-that-meets-moms-requirements-do-i-still-need-to-buy-medical-insurance)
+  * [Does MOM accept medical insurance policies bought overseas?](/faq/work-permit-for-foreign-worker/does-mom-accept-medical-insurance-policies-bought-overseas)
+  * [Can employers buy riders or plans that offer 100% buyback of the 25% co-payment component by employers?](/faq/work-permit-for-foreign-worker/can-employers-buy-riders-or-plans-that-offer-buyback-of-the-25p-copayment-component-by-ers)
+
+##  __ More on Sector-specific rules for Work Permit
+
+  * [Work Permit conditions](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/work-permit-conditions)
+  * [Non-Traditional Sources Occupation List](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/non-traditional-sources-occupation-list)
+  * [Construction sector requirements](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/construction-sector-requirements)
+  * [Manufacturing sector requirements](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/manufacturing-sector-requirements)
+  * [Marine shipyard sector requirements](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/marine-sector-requirements)
+  * [Process sector requirements](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/process-sector-requirements)
+  * [Settling-in Programme for Work Permit holders](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/settling-in-programme)
+  * [Services sector requirements](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/services-sector-requirements)
+  * [Man-year entitlement](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/man-year-entitlement)
+  * [Prior approval for process construction workers](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/prior-approval-for-process-construction-workers)
+  * [Prior approval for marine shipyard sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/prior-approval-for-marine-shipyard-sector)
+  * [Prior approval for construction sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/prior-approval-for-construction-sector)
+  * [In-principle support (IPS) for process maintenance workers](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/in-principle-support-ips-for-process-maintenance-workers)
+  * [Basic-skilled workers for construction sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/basic-skilled-workers)
+
+  * [Higher-Skilled workers for construction sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/higher-skilled-workers-for-construction-sector)
+  * [Higher-skilled workers for process sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/higher-skilled-workers-for-process-sector)
+  * [Security bond](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/security-bond)
+  * [Medical examination](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/medical-examination)
+  * [In-principle approval (IPA) for migrant worker](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/in-principle-approval)
+  * [Paying the salary](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/paying-the-salary)
+  * [Six-monthly medical examination for female migrant workers](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/six-monthly-medical-examination)
+  * [Hiring existing worker for construction sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/hiring-existing-worker-in-construction-sector)
+  * [Hiring existing worker in marine shipyard sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/hiring-existing-worker-in-marine-shipyard-sector)
+  * [Hiring existing worker in process sector](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/hiring-existing-worker-in-process-sector)
+  * [Hiring an existing manufacturing or services worker](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/hiring-an-existing-manufacturing-or-services-worker)
+  * [Cross-deploy a worker](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/cross-deploy-a-worker)
+  * [Driving occupations in the construction, marine shipyard and process sectors](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/driving-occupations-in-the-construction-marine-shipyard-and-process-sectors)
+  * [Onboard centre](/passes-and-permits/work-permit-for-foreign-worker/sector-specific-rules/onboard-centre)
+
+## Information and Services
+
+[Ministry of Manpower](http://www.mom.gov.sg "Ministry of Manpower")
+
+## Social media
+
+[About us](/about-us) [Careers](/careers)
+[Feedback](https://service2.mom.gov.sg/efeedback/Forms/efeedback.aspx) [Share
+your views @ Reach](https://www.reach.gov.sg)
+
+[Ministry of Manpower Facebook
+page](https://www.facebook.com/sgministryofmanpower "Find us on Facebook")[
+Ministry of Manpower LinkedIn page](https://www.linkedin.com/company/ministry-
+of-manpower/ "Find us on LinkedIn")[ Ministry of Manpower
+Telegram](https://t.me/sgministryofmanpower "Find us on Telegram")[ Ministry
+of Manpower youtube channel](http://www.youtube.com/user/MOMsingapore "View
+our YouTube Channel")
+
+  * [Report vulnerability](https://tech.gov.sg/report_vulnerability)
+  * [Privacy](/privacy-statement)
+  * [Terms of use](/terms-of-use)
+  * [Legislation](/legislation)
+  * [Sitemap](/sitemap)
+  * [Contact us](/contact-us)
+  * [Supported browsers ](/supportedbrowsers)
+
+  
+  
+
+  * © 2023 Government of Singapore
+  * 
+

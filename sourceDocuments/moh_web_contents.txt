@@ -1,0 +1,280 @@
+Toggle navigation [![Ministry of Health](/assets/MOH_Corp/img/moh-
+logo.png)](/)
+
+  * Search
+
+  * [ For Public  ](javascript:void\(0\))
+
+    * [News Highlights](/news-highlights)
+    * [Healthcare Schemes & Subsidies](/healthcare-schemes-subsidies)
+      * [ **Hospital Bills and Fee Benchmarks** Search for fee benchmarks for private sector fees and bill amount information for public and private hospitals.  ](/cost-financing/hospital-bills-and-fee-benchmarks)
+      * [ **Healthcare Schemes & Subsidies ** View all healthcare financing schemes & subsidies available in Singapore such as MediShield Life, CareShield Life, MediSave, CHAS and ElderShield.  ](/healthcare-schemes-subsidies)
+    * [Healthcare Locator](/home/healthcare-locator)
+      * [ **Search for Healthcare Professionals** ](/home/search-for-healthcare-professionals)
+      * [ **Suspensions/Revocations from Healthcare Financing Schemes** List of suspensions and revocations taken by MOH under CHAS, MediSave and MediShield Life  ](/resources-statistics/listing-of-suspensions-revocations-from-the-ministry-of-health-s-healthcare-financing-schemes/suspensions-revocations-from-healthcare-financing-schemes)
+      * [ **Enforcement Actions for Breaches of Regulatory Requirements** List of enforcement actions taken by MOH under the PHMCA, MRA and DRA  ](/listing-of-enforcement-actions-taken-by-the-ministry-of-health-on-breaches-of-regulatory-requirements/enforcement-actions-for-breaches-of-regulatory-requirements)
+      * [ **Upcoming and Completed Healthcare Facilities** View all upcoming and completed healthcare facilities.  ](/upcoming-and-completed-healthcare-facilities)
+    * [Disease Updates](/diseases-updates/disease-updates)
+      * [ **Overview of Diseases** Learn more about the various infectious diseases that Singapore has overcome.  ](/diseases-updates)
+      * [ **Being Prepared for a Pandemic** Learn more about how Singapore is prepared to prevent & respond to disease outbreaks.  ](/diseases-updates/being-prepared-for-a-pandemic)
+      * [ **Weekly Infectious Diseases Bulletin** ](/resources-statistics/infectious-disease-statistics/2022/weekly-infectious-diseases-bulletin)
+    * [Resources & Statistics](/resources-statistics)
+      * [ **E-Consultation** Through E-Consultation, MOH aims to gather feedback and suggestion from members of the public to further improve policies, programmes and services.  ](/e-consultation)
+      * [ **Research Grants** Search for various available grants to drive the translation of basic research to advance human healthcare, and to increase the translational and clinical research capabilities of public hospitals, research institutions and medical researchers.  ](/policies-and-guidelines/research-grants)
+      * [ **Resources & Statistics ** Search for publications, education brochures, statistics on admission rates, waiting times, bed occupancy rates, diseases and more.  
+  
+](/resources-statistics)
+
+    * [My Health Record](/home/my-health-record)
+      * [ **Appointments** ](/home/appointments)
+      * [ **Children's Health** ](/home/children's-health)
+      * [ **Personal Health** ](/home/personal-health)
+
+  * [ For Healthcare Professionals  ](javascript:void\(0\))
+
+    * [Licensing and Regulation](/licensing-and-regulation)
+    * [Health Professional Portal](/home/health-professional-portal)
+      * [ **Dentist** ](/home/dentist)
+      * [ **TCM Practitioner** ](/home/tcm-practitioner)
+      * [ **Pharmacist** ](/home/pharmacist)
+      * [ **Allied Health Professional** ](/home/allied-health-professional)
+      * [ **Nurse** ](/home/nurse)
+      * [ **Doctor** ](/home/doctor)
+      * [ **All Heathcare Professionals** ](/home/all-heathcare-professionals)
+    * [Policies and Guidelines](/policies-and-guidelines)
+      * [ **Guidelines** ](/home/guidelines)
+      * [ **Legislation** Acts regulating drugs, healthcare professionals, medical practices, research and more.  ](/policies-and-legislation)
+
+  * [ e-Services ](/e-services)
+  * [ Who We Are  ](javascript:void\(0\))
+
+    * [About Us](/about-moh)
+    * [Singapore's Healthcare System](/home/our-healthcare-system)
+    * [Senior Management ](/about-moh/senior-management)
+    * [Careers at MOH](/contact-us/careers)
+
+  * 
+
+Search
+
+  * [Ministry of Health](/)
+  * [Resources & Statistics](/resources-statistics)
+  * [Categories of Medical Information and Other Non-Clinical Information in Medical Records that are Subject to PDPA’s Mandatory Data Breach Notification Requirements](/resources-statistics/dbn-list-2021)
+
+# Categories of Medical Information and Other Non-Clinical Information in
+Medical Records that are Subject to PDPA’s Mandatory Data Breach Notification
+Requirements
+
+23 Apr 2021
+
+This webpage provides clarifications on the types of medical information
+listed in the Personal Data Protection (Notification of Data Breaches)
+Regulations 2021.  
+  
+In 2021, the Personal Data Protection Commission (PDPC) introduced the
+Personal Data Protection (Notification of Data Breaches) Regulations that set
+out mandatory data breach notification requirements. These include a list of
+prescribed classes of data deemed to be of significant harm to the affected
+individuals (“whitelist”) and would therefore be subject to breach
+notification requirements, as well as how organisations shall notify affected
+individuals and relevant authorities in the event of a data breach.
+
+### **Specified Medical Information**
+
+One of the categories of data in the PDPA whitelist contains specified medical
+information. _Table 1_ provides such types of medical information and examples
+subject to breach notification requirements if breached.  
+  
+Table 1: Prescribed classes of medical information in PDPA Regulations
+
+**PRESCRIBED CLASSES OF SPECIFIED MEDICAL INFORMATION IN PDPA REGULATIONS** |
+**SPECIFIC DATA TYPES/EXAMPLES**  
+---|---  
+18\. The assessment, diagnosis, treatment, prevention or alleviation by a
+health professional of any of the following affecting an individual:  
+|  
+(a) any sexually transmitted disease, such as Chlamydial Genital Infection,
+Gonorrhoea and Syphilis;  
+|
+
+  * Chlamydial genital infection
+
+  * Gonorrhoea
+
+  * Syphilis  
+
+  
+(b) Human Immunodeficiency Virus Infection;  
+|
+
+  * HIV
+
+  
+(c) Schizophrenia or delusional disorder;  
+|
+
+  * Schizophrenia
+
+  * Delusional disorder
+
+  
+(d) substance abuse and addiction, including drug addiction and alcoholism.  
+|
+
+  * Substance abuse (opioid abuse, inhalant abuse)
+
+  * Substance addiction (drug addiction, alcoholism)  
+
+  
+19\. The provision of treatment to an individual for or in respect of -  
+  
+(a) the donation or receipt of a human egg or human sperm; or  
+|
+
+  * Sperm donor
+
+  * Sperm recipient
+
+  * Egg donor
+
+  * Egg recipient 
+
+  
+(b) any contraceptive operation or procedure or abortion.  
+|
+
+  * Contraception operation or procedure
+
+  * Abortion information  
+
+  
+  
+20\. Any of the following:
+
+(a) subject to section 4(4)(b)1 of the Act, the donation and removal of any
+organ from the body of the deceased individual for the purpose of its
+transplantation into the body of another individual;
+
+(b) the donation and removal of any specified organ from the individual, being
+a living organ donor, for the purpose of its transplantation into the body of
+another individual;
+
+the transplantation of any organ mentioned in sub paragraph (a) or (b) into
+the body of the individual.  
+|
+
+  * Organ donation and receipt (identity of organ donor, identity of organ recipient)
+
+  * Transplant, transplant-related complications (e.g. liver transplant rejection) 
+
+  
+_1 Section 4(4)(b) of the PDPA – 4(4) This Act shall not apply in respect of -
+(b) personal data about a deceased individual, except that the provisions
+relating to the disclosure of personal data and section 24 (protection of
+personal data) shall apply in respect of personal data about an individual who
+has been dead for 10 years or fewer._
+
+  
+
+  
+
+### **Other Types of Non-Clinical Information in Medical Records**
+
+_Table 2_ lists types of non-clinical information that may be found in medical
+records and which are also subject to the PDPA’s breach notification rules.  
+  
+_Table 2_ : Types of non-clinical information that can be found in medical
+records
+
+**PRESCRIBED CLASSES OF NON-CLINICAL INFORMATION IN PDPA REGULATIONS**  
+|  **SPECIFIC DATA TYPES/EXAMPLES**  
+---|---  
+21\. Subject to section 4(4)(b) of the Act, the suicide or attempted suicide
+of the individual.  
+|
+
+  * Suicide or attempted suicide
+
+  
+22\. Domestic abuse, child abuse or sexual abuse involving or alleged to
+involve the individual.  
+|
+
+  * Domestic abuse, child abuse or sexual abuse
+
+  
+  
+
+  
+
+  
+
+Organisations can refer to the [PDPA
+legislation](https://sso.agc.gov.sg/Act/PDPA2012), and the [Personal Data
+Protection (Notification of Data Breaches) Regulations
+2021](https://sso.agc.gov.sg/SL-
+Supp/S64-2021/Published/20210129?DocDate=20210129) for details on the
+operational and notification requirements, as well as the other prescribed
+classes of information subject to mandatory data breach notification
+requirements.
+
+[__](javascript:void\(0\))
+
+Ministry of Health
+
+  * Public
+    * [News Highlights](/news-highlights)
+    * [Schemes & Subsidies](/cost-financing/healthcare-schemes-subsidies)
+      * [Fee Benchmarks and Bill Amount Information](/cost-financing/fee-benchmarks-and-bill-amount-information)
+    * [Healthcare Locator](http://hcidirectory.sg/hcidirectory/ )
+      * [Search for Healthcare Professionals ](/hpp/all-healthcare-professionals/healthcare-professionals-search )
+      * [Suspensions/Revocations from Healthcare Financing Schemes](/suspensions-revocations-from-healthcare-financing-schemes )
+      * [Enforcement Actions for Breaches of Regulatory Requirements](/enforcement-actions-for-breaches-of-regulatory-requirements )
+    * [Disease Updates](/diseases-updates/being-prepared-for-a-pandemic )
+      * [Weekly Infectious Diseases Bulletin ](/resources-statistics/infectious-disease-statistics/2021/weekly-infectious-diseases-bulletin)
+      * [Overview of Diseases ](/diseases-updates)
+    * [Resources & Statistics](/resources-statistics)
+      * [E-Consultation](/e-consultation)
+      * [Research Grants](/research-grants)
+    * [My Health Record](https://www.healthhub.sg/HealtheServices)
+      * [Children's Health](https://www.healthhub.sg/HealtheServices#p2)
+      * [Personal Health](https://www.healthhub.sg/HealtheServices)
+  * Healthcare Professionals
+    * [Licensing & Regulation](/licensing-and-regulation/regulations-guidelines-and-circulars)
+    * [Healthcare Professionals Portal](/hpp/all-healthcare-professionals)
+      * [Dentist ](/hpp/dentists)
+      * [TCM Practitioner](/hpp/tcm-practitioners)
+      * [Pharmacist](/hpp/pharmacists)
+      * [Allied Health Professionals](/hpp/allied-health-professionals)
+      * [Nurse](/hpp/nurses)
+      * [Doctor](/hpp/doctors )
+    * [Policies & Guidelines](/hpp/all-healthcare-professionals/guidelines )
+      * [Legislation](/policies-and-legislation)
+  * Who We Are
+    * [About MOH](/about-moh)
+    * [Our Healthcare System](/home/our-healthcare-system)
+    * [Senior Management](/about-moh/senior-management )
+    * [Careers at MOH](/contact-us/careers)
+
+  * [Forms](/forms)
+  * [Contact Us](/contact-us)
+  * [Feedback](/feedback)
+  * [Rate this Website](https://www.jusfeedback.asia/Community/se/705E3ECB2B7C0A8E?Agency=MOH&Svc=MOH%20Wesbite&eLnk=www.moh.gov.sg&Cat=Citizen)
+
+  * [](https://www.facebook.com/SingaporeMOH/)
+  * [](https://www.instagram.com/mohsingapore)
+  * [](https://twitter.com/MOHSingapore)
+  * [](https://www.youtube.com/user/MOHSingapore?gl=SG&hl=en-GB)
+  * [](https://www.tiktok.com/@mohsingapore)
+  * [](https://t.me/MOHSingapore)
+
+* * *
+
+  * [Report Vulnerability](https://www.tech.gov.sg/report_vulnerability)
+  * [Privacy Statement](/privacy-statement)
+  * [Terms of Use](/terms-of-use-of-website)
+
+© 2021 Government of Singapore
+
+Last Updated DD MM YYYY
+
