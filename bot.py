@@ -11,10 +11,12 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from tabulate import tabulate
 from google.cloud import translate_v2 as translate
+from ragas.metrics import faithfulness, context_precision, context_recall
+from ragas.langchain import RagasEvaluatorChain
+import os
 
 
 config = dotenv_values(".env")
-
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -53,11 +55,16 @@ Helpful Answer:"""
 custom_prompt = PromptTemplate.from_template(template)
 
 llm_name = "gpt-3.5-turbo"
-llm = ChatOpenAI(model_name=llm_name, temperature=0.2,openai_api_key=openai.api_key)
+llm = ChatOpenAI(model_name=llm_name, temperature=0.5,openai_api_key=openai.api_key)
 
-
-
+#Create google cloud client
 translate_client = translate.Client()
+
+#Make Evaluation Chain
+eval_chains = {
+    m.name: RagasEvaluatorChain(metric=m) 
+    for m in [faithfulness, context_precision, context_recall]
+}
 
 #we define a function that should process a specific type of update:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -111,7 +118,7 @@ async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def query(question:str):
     chunk(question,4)
-    retriever=db3.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": .5, "k": 5})
+    retriever=db3.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": .5, "k": 10})
     qa = ConversationalRetrievalChain.from_llm(
     llm,
     combine_docs_chain_kwargs={"prompt": custom_prompt},
@@ -121,6 +128,7 @@ def query(question:str):
     memory=memory
     )
     result = qa({"question":question})
+    evalChainRun(result)
     # ,"chat_history":chat_history
     return result["answer"]
 
@@ -146,6 +154,21 @@ def chunk(question:str, k:int):
 
     except Exception as error_msg:
         print("Error: ", error_msg)
+
+def evalChainRun(result):
+    try:
+       fakeResult = result.copy()
+       query_key = 'query'
+       result_key = 'result'
+       fakeResult[result_key] = fakeResult.pop('answer')
+       fakeResult[query_key] = fakeResult.pop('question')
+       for name, eval_chain in eval_chains.items():
+            score_name = f"{name}_score"
+            print(f"{score_name}: {eval_chain(fakeResult)[score_name]}")
+
+    except Exception as e:
+        print(e)
+
 
 # for google cloud detection of language
 def detect_language(text):
